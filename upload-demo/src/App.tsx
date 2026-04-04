@@ -30,6 +30,7 @@ interface HistoryRecord {
   videoTitle: string
   videoId: string
   savedPath: string
+  videoBlob?: Blob  // 本地视频 blob，用于历史记录恢复
   createdAt: number
   updatedAt: number
 }

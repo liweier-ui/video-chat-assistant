@@ -39,3 +39,5 @@ cacert.pem
 .idea/
 *.sw?
 .DS_Store
+
+.vercel
