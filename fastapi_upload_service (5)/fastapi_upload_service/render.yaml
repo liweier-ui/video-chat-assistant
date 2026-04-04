@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: video-chat-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: DEEPSEEK_API_KEY
+        sync: false
+      - key: CV_PYTHON
+        value: python
