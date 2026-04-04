@@ -1,4 +1,3 @@
 {
-  "buildCommand": "cd upload-demo && npm install && npm run build",
-  "outputDirectory": "upload-demo/dist"
+  "rootDirectory": "upload-demo"
 }
