@@ -547,10 +547,10 @@ _UPLOADS_DIR = APP_ROOT / "uploads"
 _UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
 app.mount("/videos", StaticFiles(directory=str(_UPLOADS_DIR)), name="videos")
 
-# 挂载前端静态文件（npm run build 产物），实现前后端一体部署
+# 挂载前端静态文件（npm run build 产物），挂载到 /app 路径避免拦截 API 路由
 _FRONTEND_DIR = APP_ROOT.parent.parent / "upload-demo" / "dist"
 if _FRONTEND_DIR.exists():
-    app.mount("/", StaticFiles(directory=str(_FRONTEND_DIR), html=True), name="frontend")
+    app.mount("/app", StaticFiles(directory=str(_FRONTEND_DIR), html=True), name="frontend")
 
 
 @app.on_event("startup")
