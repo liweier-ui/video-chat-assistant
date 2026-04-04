@@ -7,6 +7,6 @@
     "numReplicas": 1,
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 3,
-    "rootDirectory": "fastapi_upload_service (5)/fastapi_upload_service"
+    "rootDirectory": "fastapi_upload_service_backend/fastapi_upload_service"
   }
 }
