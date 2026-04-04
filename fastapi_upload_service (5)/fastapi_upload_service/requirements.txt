@@ -1,0 +1,15 @@
+fastapi==0.115.8
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9
+httpx>=0.25.0
+python-dotenv>=1.0.0
+# PaddleOCR 依赖链：缺了会导致子进程里 paddleocr 导入失败，result.json 永远不更新
+pydantic>=2.4.0
+pydantic-core>=2.10.0
+setuptools>=65.0.0
+# Paddle 相关版本需要严格匹配，否则会出现 ConvertPirAttribute2RuntimeAttribute 报错
+paddlepaddle==3.2.0
+paddleocr==3.3.3
+opencv-python>=4.8.0
+# 面部表情识别（需 setuptools 提供 pkg_resources）
+fer>=24.0.0

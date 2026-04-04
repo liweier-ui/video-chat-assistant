@@ -1,0 +1,41 @@
+# 不上传 node_modules、videos、CV 运行时产物
+node_modules/
+uploads/
+.venv/
+venv/
+*.mp4
+*.avi
+*.mov
+*.mkv
+cv/
+__pycache__/
+*.pyc
+*.log
+start_all.log
+*.bat
+*.vbs
+STOP.bat
+STOP_ALL.bat
+STOP_LAUNCHER.vbs
+一键关闭.bat
+一键启动.bat
+START_LAUNCHER.vbs
+STOP_LAUNCHER.vbs
+功能说明-上传后全流程.md
+QUICKSTART.md
+使用说明.md
+
+# 敏感文件
+.env
+.env.local
+.env.production
+cacert.pem
+
+# 数据库（本地数据）
+*.db
+
+# IDE
+.vscode/
+.idea/
+*.sw?
+.DS_Store
